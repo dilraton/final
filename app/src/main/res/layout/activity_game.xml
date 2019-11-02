@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorButton"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/arrow" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="100"
+            android:layout_marginTop="10dp"
+            android:progressDrawable="@drawable/progressbar" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPause"
+            android:layout_width="35dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="0dp"
+            android:paddingTop="0dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/pause" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="67dp"
+        android:layout_gravity="center_horizontal">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/rest"
+            android:visibility="invisible" />
+
+        <com.example.dell.linkgame.view.GameView
+            android:id="@+id/gameView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp">
+
+            <ImageView
+                android:id="@+id/imageViewFrame"
+                android:layout_width="131dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/frame" />
+
+            <TextView
+                android:id="@+id/textVieScoreLa2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/text_label_score"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewScore2"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textVieScoreLa2"
+                android:layout_toRightOf="@+id/textVieScoreLa2"
+                android:text="@string/text_score"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageButtonTip"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/max3" />
+
+        <ImageButton
+            android:id="@+id/imageButtonReplay"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/replay1" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMenu"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/menu" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

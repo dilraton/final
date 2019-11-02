@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">连连看</string>
+    <string name="btn_name_an">动物类</string>
+    <string name="btn_name_fr">水果类</string>
+    <string name="btn_name_fl">面孔类</string>
+    <string name="btn_name_ic">雪糕类</string>
+    <string name="btn_name_ex">退出</string>
+    <string name="text_label_score">分数：</string>
+    <string name="text_score">0</string>
+    <string name="order2">经典模式</string>
+    <string name="order3">困难模式</string>
+    <string name="order1">简单模式</string>
+</resources>
